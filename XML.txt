@@ -1,0 +1,50 @@
+#############################################################################################################
+
+En plus de permettre de sauvegarder le resultat de la requete sur un fichier,
+LogParser permet aussi de choisir le format du texte. Parmi les formats possibles
+on a le format XML
+
+le choix du format se fait avec l'option -o:
+
+------------------------------------------------------------------------------------------------
+Voici un exemple:
+
+		$ logparser "select distinct EventTypeName, EventType into /Mouchtali/Into.txt
+		from Application" -i:EVT -stats:OFF -q:ON -o:XML
+
+---------------------------------------------------------------------------------------------------
+		
+	###### Voici le resultat de la requête. ############
+
+	<?xml version="1.0" encoding="ISO-10646-UCS-2" standalone="yes" ?>
+	<!DOCTYPE ROOT[
+ 	<!ATTLIST ROOT DATE_CREATED CDATA #REQUIRED>
+ 	<!ATTLIST ROOT CREATED_BY CDATA #REQUIRED>
+ 	<!ELEMENT EventTypeName (#PCDATA)>
+ 	<!ELEMENT ROW (EventTypeName)>
+ 	<!ELEMENT ROOT (ROW*)>]>
+	<ROOT DATE_CREATED="2014-03-26 19:54:00" CREATED_BY="Microsoft Log Parser V2.2">
+ 	<ROW>
+  	<EventTypeName>
+  	Information event
+  	</EventTypeName>
+ 	</ROW>
+ 	<ROW>
+ 	 <EventTypeName>
+ 	Warning event
+  	</EventTypeName>
+ 	</ROW>
+ 	<ROW>
+  	<EventTypeName>
+  	Success event
+  	</EventTypeName>
+ 	</ROW>
+ 	<ROW>
+  	<EventTypeName>
+  	Error event
+ 	 </EventTypeName>
+ 	</ROW>
+	</ROOT>
+
+
+###########################################################################################################################
