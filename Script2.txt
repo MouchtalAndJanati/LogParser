@@ -1,0 +1,32 @@
+
+#####################################################################################################################
+
+# On peut si on le souhaite, stocker le resultats de la requete sur un fichier afin de pouvoir utiliser
+ les resultats plus tard.
+
+# Cette sauvegarde se fait avec "INTO", Into doit être placé avant le FROM et 
+  il faut indiquer le chemin du fichier.
+
+#Voici un exemple:
+
+#On va chercher les nom des evenements et leurs type. On veut garder le resultat sur un fichier nommé Into.txt
+
+	$ logparser "select distinct EventTypeName, EventType into /Mouchtali/Into.txt
+	from Application" -i:EVT -stats:OFF -q:ON
+
+
+	-----------Voici le resultat -----------------
+
+		Information event
+		Warning event
+		Success event
+		Error event
+	-------------------------------------------------
+
+ 
+	
+
+
+
+
+
