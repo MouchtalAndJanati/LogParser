@@ -30,6 +30,8 @@ L’avantage principal est qu’il utilise un pseudo langage proche du SQL pour effe
 	S’il n’est pas indiqué, logparser le trouve tout seul en fonction du fichier indiqué dans la clause ‘into‘.
 -stats: ON/OFF: si les stats sont indiquées, alors logparser renvoie le nombre de lignes traitées et le temps passé.
 -q: ON/OFF: mode quiet, par exemple pour éliminer les entêtes.
+ INTO: Ceci permet d'enregister les resultats de la requete sur un fichier.
+	 Into doit être placé avant le FROM et il faut indiquer le chemin du fichier.
 
 
 ############################################################################################
