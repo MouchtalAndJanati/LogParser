@@ -1,5 +1,14 @@
 ###########################################################################################
 
+	
+	Les auteurs de ce projet sont:
+
+		SOILIHI Mouchtali
+		JANATI Mohammed
+
+     Tous les deux en Masser 2 Sécurité des systèmes information à université de Lorraine à Metz (2013/2014)
+
+
 Un petit post sur un outil bien pratique pour tous ceux qui rament pour écrire des scripts sous Windows.
 Un des outils indispensables dont toute production doive se doter est un analyseur de journaux d’erreur.
 
