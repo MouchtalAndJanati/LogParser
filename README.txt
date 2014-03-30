@@ -1,4 +1,4 @@
-####################################################################################################
+###########################################################################################
 
 Un petit post sur un outil bien pratique pour tous ceux qui rament pour écrire des scripts sous Windows.
 Un des outils indispensables dont toute production doive se doter est un analyseur de journaux d’erreur.
@@ -23,7 +23,7 @@ L’avantage principal est qu’il utilise un pseudo langage proche du SQL pour effe
 -q: ON/OFF: mode quiet, par exemple pour éliminer les entêtes.
 
 
-#################################################################################################
+############################################################################################
 
 
 
