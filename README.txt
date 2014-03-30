@@ -1,3 +1,5 @@
+#######################################################################################################################
+
 Un petit post sur un outil bien pratique pour tous ceux qui rament pour écrire des scripts sous Windows.
 Un des outils indispensables dont toute production doive se doter est un analyseur de journaux d’erreur.
 
@@ -18,7 +20,10 @@ L’avantage principal est qu’il utilise un pseudo langage proche du SQL pour effe
 -o: Donne le format de sortie. Par exemple -o:XML pour écrire au format XML.
 	S’il n’est pas indiqué, logparser le trouve tout seul en fonction du fichier indiqué dans la clause ‘into‘.
 -stats: ON/OFF: si les stats sont indiquées, alors logparser renvoie le nombre de lignes traitées et le temps passé.
--q: ON/OFF: mode quiet, par exemple pour éliminer les entêtes
+-q: ON/OFF: mode quiet, par exemple pour éliminer les entêtes.
+
+
+######################################################################################################################
 
 
 

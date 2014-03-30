@@ -19,7 +19,7 @@ Important: Ceci n'étant pas un tutorial sur le langage SQL, on suppose
 ---------------------------------------------------------------------------------------- 
 # 2: Maintenant on veut voir les messages des événements "ERROR" issu du journal "Application"
 
-	$logparser "select Message from System where EventTypeName='Error event' 
+	$logparser "select Message from System where EventTypeName='Error event' " 
 	 -i:EVT -stats:OFF
 ----------------------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@ Important: Ceci n'étant pas un tutorial sur le langage SQL, on suppose
 ---------------------------------------------------------------------------------------
 # 6: On veut Connaitre le NOM et le DOMAINE du compte qui a generé une erreur dans une application
 
-	$logparser "select AccountName, Account Domain from Application where EventTypeName='Error event'
+	$logparser "select AccountName, Account Domain from Application where EventTypeName='Error event' "
 		-i:EVT -stats:OFF
 ------------------------------------------------------------------------------------------
 
